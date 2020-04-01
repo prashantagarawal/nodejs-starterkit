@@ -59,7 +59,7 @@ This starter-kit serves as a great starting point for all the hapi developers wh
 2. localhost:8000/api - Serve rest api request
 
 ## Features ##
-- **Glued Server -** [Glue](https://github.com/hapijs/glue/blob/master/API.md) is a plugin that provides easy server configuration
+- **Glued Server -** [Glue](https://github.com/hapijs/glue/blob/master/API.md) is a plugin that works with hapi server to provides easy server configuration.
 - **Using Dot ENV -** [(.env)](https://www.npmjs.com/package/dotenv) All the environment variables are managed using 'dotenv' node package for development, the same will need to be configured at the host server in the production environment.
 - **Configuration Using [confidence](https://www.npmjs.com/package/confidence) module -** A combination of Glue server along with Confidence and dotEnv makes it easy and handy to setup node config with best practices which is based on [The Twelve-Factor-App](http://12factor.net/config) methodology.
 - **Local Authentication** using Email and Password
@@ -91,7 +91,7 @@ This starter-kit serves as a great starting point for all the hapi developers wh
 ```
 ├── app
 │   ├── controllers
-│   │   ├── api            // Controllers are organized by module names for rest api 
+│   │   ├── mobile         // Controllers are organized by module names for mobile api 
 │   │   └── web            // Controllers are organized by module names for web api.
 │   ├── Services           // Services contains methods / business logic that are access by both api and web controllers.
 │   ├── models             // All mongoose models are defined here

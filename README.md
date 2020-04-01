@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/hapi-logo.png" alt="hapi.js" width="200"></a>
-  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/node-logo.png" alt="hapi.js" width="200"></a>
+  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/hapi-logo.png" alt="hapi.js" width="250"></a>
+  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/node-logo.png" alt="hapi.js" width="250"></a>
   <br>
   Node js Starterkit
   <br>
@@ -33,17 +33,19 @@
 ## Table of Contents ##
 1. [About HAPI JS](#Hapi JS)
 2. [Application](#Application)
-3. [Technology](#Technology)
-4. [Application Structure](#Application-Structure)
-5. [Environment Variables](#.env-Configuration)
-6. [Run Locally](#Running-the-server-locally)
-7. [API Versioning](#REST-API-Versioning)
-8. [Testing](#Testing)
-9. [SSL Support](#SSL-Support)
-10. [Contributor](#Contributor)
-11. [License](#License)
+3. [Features](#Features)
+4. [Technology](#Technology)
+5. [Application Structure](#Application-Structure)
+6. [Environment Variables](#.env-Configuration)
+7. [Run Locally](#Running-the-server-locally)
+8. [API Versioning](#REST-API-Versioning)
+9. [Testing](#Testing)
+10. [SSL Support](#SSL-Support)
+11. [Contributor](#Contributors)
+12. [References_Used](#References)
+13. [License](#License)
 
-## Philosophy ##
+## Hapi JS ##
 hapi.js (also known as hapi) is an open-source framework for web applications. The most common use of hapi is to build web services such as JSON API. You can build application programming interface (API) servers, websites, and HTTP proxy applications with hapi. It was created by the mobile team at Walmart Labs—led by Eran Hammer, who created OAuth—to handle their traffic for events like Black Friday, one of the busiest days for online shopping in the U.S. calendar.
 
 The original versions of hapi used the Express framework. Walmart found that there were limitations with Express that made the framework unsuitable for their particular requirements. Express was missing some key features, so Walmart eventually had hapi evolve to its own stand-alone framework.
@@ -59,6 +61,27 @@ This starter-kit serves as a great starting point for all the hapi developers wh
 
 1. localhost:8000 - Serve web request <br />
 2. localhost:8000/api - Serve rest api request
+
+## Features ##
+- **Local Authentication** using Email and Password
+- **OAuth 1.0a Authentication** via Twitter
+- **OAuth 2.0 Authentication** via Facebook, Google, GitHub, LinkedIn, Instagram
+- Flash notifications
+- MVC Project Structure
+- Node.js clusters support
+- Sass stylesheets (auto-compiled via middleware)
+- Bootstrap 4 + Extra Themes
+- Contact Form (powered by Mailgun, Sendgrid or Mandrill)
+- **Account Management**
+ - Gravatar
+ - Profile Details
+ - Change Password
+ - Forgot Password
+ - Reset Password
+ - Link multiple OAuth strategies to one account
+ - Delete Account
+- CSRF protection
+- **API Examples**: Facebook, Foursquare, Last.fm, Tumblr, Twitter, Stripe, LinkedIn and more
 
 WEB and RESTAPI both have their independent authentication mechanisms, the web application uses the cookie based authentication and the RESTAPI uses the JWT authentication for access. This application assumes the availability of 'MongoDB' installation on the localhost where the server will run.
 
@@ -192,6 +215,9 @@ However, for production the credentials should be set as environment variables.
 
 ## Contributors ##
 [Prashant Agarwal](https://www.linkedin.com/in/agarawal-prashant)
+
+## References ##
+[Thanks to this medium article](https://medium.com/the-resonant-web/production-ready-hapi-js-starter-kit-part-2-cba358373017)
 
 ## License ##
 This project is licensed under the terms of the MIT license.

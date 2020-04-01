@@ -31,7 +31,7 @@
 </p>
 
 ## Table of Contents ##
-1. [About HAPI JS](#Hapi JS)
+1. [About HAPI JS](#HapiJS)
 2. [Application](#Application)
 3. [Features](#Features)
 4. [Technology](#Technology)
@@ -45,7 +45,7 @@
 12. [References_Used](#References)
 13. [License](#License)
 
-## Hapi JS ##
+## HapiJS ##
 hapi.js (also known as hapi) is an open-source framework for web applications. The most common use of hapi is to build web services such as JSON API. You can build application programming interface (API) servers, websites, and HTTP proxy applications with hapi. It was created by the mobile team at Walmart Labs—led by Eran Hammer, who created OAuth—to handle their traffic for events like Black Friday, one of the busiest days for online shopping in the U.S. calendar.
 
 The original versions of hapi used the Express framework. Walmart found that there were limitations with Express that made the framework unsuitable for their particular requirements. Express was missing some key features, so Walmart eventually had hapi evolve to its own stand-alone framework.
@@ -63,31 +63,19 @@ This starter-kit serves as a great starting point for all the hapi developers wh
 2. localhost:8000/api - Serve rest api request
 
 ## Features ##
+- **Glued Server** [Glue](https://github.com/hapijs/glue/blob/master/API.md) is a plugin that provides easy server configuration
+- **Using Dot ENV** [.env](https://www.npmjs.com/package/dotenv) All the environment variables are managed using 'dotenv' node package for development, the same will need to be configured at the host server in the production environment.
+- **Configuration Using Confidence module** [confidence](https://www.npmjs.com/package/confidence) A combination of Glue server along with Confidence and dotEnv makes it easy and handy to setup node config with best practices which is based on [The Twelve-Factor-App](http://12factor.net/config) methodology.
 - **Local Authentication** using Email and Password
-- **OAuth 1.0a Authentication** via Twitter
-- **OAuth 2.0 Authentication** via Facebook, Google, GitHub, LinkedIn, Instagram
-- Flash notifications
+- **cookie based and JWT authentication** WEB and RESTAPI both have their independent authentication mechanisms, the web application uses the cookie based authentication and the RESTAPI uses the JWT authentication for access. This application assumes the availability of 'MongoDB' installation on the localhost where the server will run.
 - MVC Project Structure
-- Node.js clusters support
-- Sass stylesheets (auto-compiled via middleware)
-- Bootstrap 4 + Extra Themes
-- Contact Form (powered by Mailgun, Sendgrid or Mandrill)
+- Sass stylesheets (auto-compiled via middleware) 
 - **Account Management**
- - Gravatar
- - Profile Details
- - Change Password
- - Forgot Password
- - Reset Password
- - Link multiple OAuth strategies to one account
- - Delete Account
-- CSRF protection
-- **API Examples**: Facebook, Foursquare, Last.fm, Tumblr, Twitter, Stripe, LinkedIn and more
-
-WEB and RESTAPI both have their independent authentication mechanisms, the web application uses the cookie based authentication and the RESTAPI uses the JWT authentication for access. This application assumes the availability of 'MongoDB' installation on the localhost where the server will run.
-
-The app contains basic user management with login, logout, password reset, profile view. Forgot password implementation is done using 'nodemailer' (sends an email with reset password link with a unique token that expires in 1 hour). All the environment variables are managed using 'dotenv' node package for development, the same will need to be configured at the host server in the production environment.
-
-If you are using 'Chrome' for unit testing the application, you can Hapi-ly use the 'node-inspector' chrome plugin pre-configured with this app for debugging purposes.
+- Profile Details
+- Change Password
+- Forgot Password - Forgot password implementation is done using 'nodemailer' (sends an email with reset password link with a unique token that expires in 1 hour).
+- Reset Password
+- If you are using 'Chrome' for unit testing the application, you can Hapi-ly use the 'node-inspector' chrome plugin pre-configured with this app for debugging purposes.
 
 ## Technology ##
 - **Hapi** - Server side framework

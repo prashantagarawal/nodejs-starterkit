@@ -1,6 +1,7 @@
 <h1 align="center">
   <br>
   <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/hapi-logo.png" alt="hapi.js" width="200"></a>
+  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/node-logo.png" alt="hapi.js" width="200"></a>
   <br>
   Node js Starterkit
   <br>
@@ -30,7 +31,7 @@
 </p>
 
 ## Table of Contents ##
-1. About HAPI JS(#Hapi JS)
+1. [About HAPI JS](#Hapi JS)
 2. [Application](#Application)
 3. [Technology](#Technology)
 4. [Application Structure](#Application-Structure)
@@ -85,14 +86,14 @@ If you are using 'Chrome' for unit testing the application, you can Hapi-ly use 
 │   ├── controllers
 │   │   ├── api            // Controllers are organized by module names for rest api 
 │   │   └── web            // Controllers are organized by module names for web api.
-│   ├── helpers            // Helpers contains methods that are access by both api and                                web controllers.
+│   ├── Services           // Services contains methods / business logic that are access by both api and web controllers.
 │   ├── models             // All mongoose models are defined here
 │   ├── routes             // All app routes are defined here
 │   │   ├── mobileApi      // RESTAPI routes for multiple versions V1 & V2.
 │   │   │   ├── v1         // Routes for version1
 │   │   │   └── v2         // Routes for version2
 │   │   └── webApi         // WEB api routes.
-│   └── templates          // All server-rendered handlebar templates, partials and                                helpers
+│   └── templates          // All server-rendered handlebar templates, partials and helpers
 ├── assets                 // Contains all static resources 
 │   ├── fonts              // Fonts used in application
 │   ├── images             // Images used in application

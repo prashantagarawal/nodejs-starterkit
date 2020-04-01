@@ -1,13 +1,13 @@
 <h1 align="center">
   <br>
-  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/hapi-logo.png" alt="hapi.js" width="250"></a>
-  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/node-logo.png" alt="hapi.js" width="250"></a>
+  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/hapi-logo.png" alt="hapi.js" width="200"></a>
+  <a><img src="https://github.com/prashantagarawal/nodejs-starterkit/blob/master/assets/images/node-logo.png" alt="hapi.js" width="200"></a>
   <br>
   Node js Starterkit
   <br>
 </h1>
 
-<h4 align="center">A boilerplate app which provides a great starting point for any developer who is looking to build their stack using Node Js / Hapi Js and MongoDB.</h4>
+<h4 align="center">A boilerplate app which provides a great starting point for any developer who is looking to build their stack using Node Js/Hapi Js and MongoDB.</h4>
 
 <p align="center">
     <a alt="Node.js">
@@ -48,13 +48,9 @@
 ## HapiJS ##
 hapi.js (also known as hapi) is an open-source framework for web applications. The most common use of hapi is to build web services such as JSON API. You can build application programming interface (API) servers, websites, and HTTP proxy applications with hapi. It was created by the mobile team at Walmart Labs—led by Eran Hammer, who created OAuth—to handle their traffic for events like Black Friday, one of the busiest days for online shopping in the U.S. calendar.
 
-The original versions of hapi used the Express framework. Walmart found that there were limitations with Express that made the framework unsuitable for their particular requirements. Express was missing some key features, so Walmart eventually had hapi evolve to its own stand-alone framework.
-
 hapi provides a robust plugin system that allows you to add new features and fix bugs at a fast pace. hapi enables you to build scalable APIs, also it is an excellent choice for building Representational State Transfer (REST) APIs because it provides you with routing, input, output validation, and caching. You can build an API that serves all kinds of clients that need mobile and single-page applications.
 
 You can also use MySQL, MongoDB, and Postgres with hapi. hapi also allows you to build static websites. It provides a templating engine to render the dynamic content. You can use hapi with any front-end framework, like React, Angular, and Vue.js to create a single-page application.
-
-Here in this app, the APIs are well documented for unit testing and sharing with UI team using Hapi-Swagger.
 
 ## Application ##
 This starter-kit serves as a great starting point for all the hapi developers who were looking for a hapi based platform as their production server. Once successfully deployed, this kit gives developers access to the following two modes of interaction with the server:
@@ -63,18 +59,18 @@ This starter-kit serves as a great starting point for all the hapi developers wh
 2. localhost:8000/api - Serve rest api request
 
 ## Features ##
-- **Glued Server** [Glue](https://github.com/hapijs/glue/blob/master/API.md) is a plugin that provides easy server configuration
-- **Using Dot ENV** [.env](https://www.npmjs.com/package/dotenv) All the environment variables are managed using 'dotenv' node package for development, the same will need to be configured at the host server in the production environment.
-- **Configuration Using Confidence module** [confidence](https://www.npmjs.com/package/confidence) A combination of Glue server along with Confidence and dotEnv makes it easy and handy to setup node config with best practices which is based on [The Twelve-Factor-App](http://12factor.net/config) methodology.
+- **Glued Server -** [Glue](https://github.com/hapijs/glue/blob/master/API.md) is a plugin that provides easy server configuration
+- **Using Dot ENV -** [(.env)](https://www.npmjs.com/package/dotenv) All the environment variables are managed using 'dotenv' node package for development, the same will need to be configured at the host server in the production environment.
+- **Configuration Using [confidence](https://www.npmjs.com/package/confidence) module -** A combination of Glue server along with Confidence and dotEnv makes it easy and handy to setup node config with best practices which is based on [The Twelve-Factor-App](http://12factor.net/config) methodology.
 - **Local Authentication** using Email and Password
-- **cookie based and JWT authentication** WEB and RESTAPI both have their independent authentication mechanisms, the web application uses the cookie based authentication and the RESTAPI uses the JWT authentication for access. This application assumes the availability of 'MongoDB' installation on the localhost where the server will run.
-- MVC Project Structure
-- Sass stylesheets (auto-compiled via middleware) 
-- **Account Management**
-- Profile Details
-- Change Password
-- Forgot Password - Forgot password implementation is done using 'nodemailer' (sends an email with reset password link with a unique token that expires in 1 hour).
-- Reset Password
+- **Cookie based and JWT authentication** WEB and RESTAPI both have their independent authentication mechanisms, the web application uses the cookie based authentication and the RESTAPI uses the JWT authentication for access. This application assumes the availability of 'MongoDB' installation on the localhost where the server will run.
+- **Hapi-Swagger -** All Apis are well documented for unit testing and sharing with UI teams.
+- **MVC Project Structure**
+- **Sass stylesheets (auto-compiled via middleware)** 
+- **Profile Details**
+- **Change Password**
+- **Forgot Password -** Forgot password implementation is done using 'nodemailer' (sends an email with reset password link with a unique token that expires in 1 hour).
+- **Reset Password**
 - If you are using 'Chrome' for unit testing the application, you can Hapi-ly use the 'node-inspector' chrome plugin pre-configured with this app for debugging purposes.
 
 ## Technology ##
@@ -178,7 +174,9 @@ $ npm start
 $ npm run prod
 ```
 The servers should be running at: <br/> [localhost:8000](https://localhost:8000)
-
+This entire flow could be tested using the swagger documentation
+Please use the following URL for accessing the same:
+[http://localhost:8000/documentation#/](http://localhost:8000/documentation#/)
 ## REST API Versioning ##
 The starterkit now supports versioning out of the box. For sample purposes, v1 and v2 folders with appropriate route handlers are shared with this boilerplate. The versioning is done at the router's level only. Services are still placed at a single place with no support for versioning.
 

@@ -202,8 +202,5 @@ However, for production the credentials should be set as environment variables.
 ## Contributors ##
 [Prashant Agarwal](https://www.linkedin.com/in/agarawal-prashant)
 
-## References ##
-[Thanks to this medium article](https://medium.com/the-resonant-web/production-ready-hapi-js-starter-kit-part-2-cba358373017)
-
 ## License ##
 This project is licensed under the terms of the MIT license.

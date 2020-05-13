@@ -42,8 +42,7 @@
 9. [Testing](#Testing)
 10. [SSL Support](#SSL-Support)
 11. [Contributor](#Contributors)
-12. [References_Used](#References)
-13. [License](#License)
+12. [License](#License)
 
 ## HapiJS ##
 hapi.js (also known as hapi) is an open-source framework for web applications. The most common use of hapi is to build web services such as JSON API. You can build application programming interface (API) servers, websites, and HTTP proxy applications with hapi. It was created by the mobile team at Walmart Labs—led by Eran Hammer, who created OAuth—to handle their traffic for events like Black Friday, one of the busiest days for online shopping in the U.S. calendar.

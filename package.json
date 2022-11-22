@@ -73,7 +73,7 @@
     "vision": "^5.4.4",
     "visionary": "^6.0.2",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2",
     "wreck": "^14.1.4",
     "yar": "^9.1.0"
